@@ -1,3 +1,4 @@
+
 {
   "name": "pronunciation-corrector-chromium-extension",
   "version": "0.1.0",
@@ -5,7 +6,7 @@
   "description": "pronunciation-corrector-chromium-extension",
   "content_scripts": [
     {
-      "matches": ["https://corrector.justsong.cn/*"],
+      "matches": ["https://fy.123546.xyz/*"],
       "run_at": "document_end",
       "js": ["js/content-script/corrector/content-script.js"]
     },
@@ -19,20 +20,17 @@
   ],
   "permissions": [
     "declarativeNetRequest",
-    "declarativeNetRequestWithHostAccess",
-    "webNavigation"
+    "declarativeNetRequestWithHostAccess"
   ],
   "host_permissions": [
     "*://www.youdao.com/*",
     "*://dict.youdao.com/*",
-    "*://corrector.justsong.cn/*"
+    "*://fy.123546.xyz/*"
   ],
   "web_accessible_resources": [
     {
       "resources": ["*.js", "*.css", "*.html"],
-      "matches": ["*://*/*"],
-      "extension_ids": [],
-      "use_dynamic_url": true
+      "matches": ["*://*/*"]
     }
   ],
   "declarative_net_request": {
