@@ -4,7 +4,7 @@
     "priority": 2000,
     "action": { "type": "block" },
     "condition": {
-      "urlFilter": "corrector.justsong.cn",
+      "urlFilter": "fy.123546.xyz",
       "requestDomains": ["rlogs.youdao.com"],
       "resourceTypes": [
         "main_frame",
